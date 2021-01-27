@@ -3,3 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo{
+  float: left;
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+.row{
+  margin: 0 -15px;
+}
+
+.row:after{
+  content: "";
+  clear: both;
+  display: table;
+}
