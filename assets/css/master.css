@@ -25,3 +25,20 @@
   clear: both;
   display: table;
 }
+
+[class^="col-"] {
+  float: left;
+  padding: 0 20px;
+}
+
+.col_100 {
+  width: 100%;
+}
+
+.col_33 {
+  width: calc(100% / 3);
+}
+
+.col_50 {
+  width: 50%;
+}
