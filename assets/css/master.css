@@ -1,120 +1,214 @@
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* layout */
-.container {
-  width:85%;
-  margin: 0 auto;
+a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.row {
-  margin: 0 -15px;
-}
+/* utilities */
 
-.row:after {
+.clear:after {
   content: "";
-  clear: both;
   display: table;
+  clear: both;
 }
 
 [class^="col_"] {
   float: left;
-  padding: 0 15px;
 }
 
-.col_100 {
-  width: 100%;
+.row {
+  margin-top: 30px;
 }
 
-.col_33 {
-  width: calc(100% / 3);
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.col_50 {
-  width: 50%;
+.radious {
+  border-radius: 5px;
 }
-/* layout */
 
 /* header */
-nav {
-  background-color: #0c325a;
-  height: 80px;
-  line-height: 80px;
-  width: 100%;
+/* menu nav */
+
+.img_logo {
+  vertical-align: center;
 }
 
-.logo {
-  display: inline-block;
-  float: left;
-  margin-top: 8px;
-  margin-right: 15px;
+header {
+  height: 560px;
 }
 
-nav ul {
-  display: inline-block;
-}
-
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  float: left;
-  margin-left: 15px;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.text_right {
-  float: right;
-}
-
-.butt_green {
-  border-radius: 5px;
-  background-color: #7CBB02;
-  padding: 10px;
-}
-
-#butt_bord {
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  padding: 10px 25px;
-}
-
-.h_nav {
-  height: 80px;
-}
-
-.bg_header {
-  background-image: url("../img/background-header.png");
-  height: 425px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-color: #0c325a;
-  background-size: 1000px;
-  background-position: right;
-}
-/* header */
-
-/* main */
-.title {
+.container {
+  width: 80%;
+  margin: 0 auto;
   position: relative;
 }
 
-.title h1 {
-  color: #ffffff;
-  width: 100%;
-  font-size: 50px;
-  font-family: 'Roboto', sans-serif;
-  position: absolute;
-  top: 70px;
+nav {
+  height: 80px;
+  line-height: 80px;
 }
 
-.title a {
-  position: absolute;
-  top: 200px;
+nav ul {
+  list-style: none;
+  display: inline-block;
+  vertical-align: center;
+  padding-top: .80px;
 }
+
+nav ul li {
+  display: inline-block;
+  padding: .64px;
+}
+
+nav ul li a {
+  padding: .6rem;
+  font-size: .8rem;
+}
+
+.ul_right {
+  float: right;
+}
+
+.butn_login {
+  border: 1px solid #FFFFFF;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+/* padding */
+
+.padding {
+  padding-left: 45px;
+}
+
+/* backgrounds*/
+
+.bg_blue {
+  background-color: #0C325A;
+}
+
+.bg_green {
+  background-color: #7CBB02;
+}
+
+.bg_gray {
+  background-color: #D3D3D3;
+}
+
+.txt_gray {
+  color: #808090;
+}
+
+/* jumbo */
+
+.bg_jumbo {
+  background-image: url(../img/background-header.png);
+  background-position: right bottom;
+  background-size: 65%;
+  background-repeat: no-repeat;
+}
+
+.jumbo {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  width: 50%;
+  position: absolute;
+  top: 190px;
+}
+
+.jumbo h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.jumbo a .butn_jumbo {
+  width: fit-content;
+  margin-top: 24px;
+  padding: 24px;
+}
+
+/* main */
+
+.description {
+  height: 150px;
+  text-align: center;
+  position: relative;
+}
+
+.txt {
+  width: fit-content;
+  text-align: center;
+}
+
+/* 3 col con img e testo sotto */
+
+.col_33 {
+  width: calc(100% / 3);
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.col_33 img {
+  display: block;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.col_33 h1 {
+  text-align: center;
+  color: #7CBB02;
+  padding: 30px 0px;
+}
+
+.col_33 p {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.line {
+  width: 110px;
+  margin: 0 auto;
+  border: 1px solid #808090;
+}
+
+.col_50 {
+  width: calc(100% / 2);
+}
+
+.col_50 img {
+  width: 100%;
+}
+
+.col_50_right {
+  padding-right: 160px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.col_50_right h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.col_50_right a {
+  display: inline-block;
+  color: blue;
+  text-transform: initial;
+  margin-top: 15px;
+}
+
+/* .h3 {
+} */

@@ -1,72 +1,107 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>fluentify</title>
-    <link rel="stylesheet" href="./assets/css/master.css">
-  </head>
-  <body>
-    <header>
-      <!-- menu con logo a sinistra e bottoni spostati a destra -->
+</head>
+<body>
+  <!-- header nav+jumbo -->
+  <header class="bg_jumbo bg_blue">
+    <div class="container">
+      <!-- menu nav-->
       <nav>
-        <!-- nav con logo -->
-        <div class="container h_nav">
-          <div class="logo">
-            <img src="./assets/img/logo.svg" alt="logo">
-          </div>
-          <ul>
-            <li><a href="#">IL METODO</a></li>
-            <li><a href="#">LA TECNOLOGIA</a></li>
-            <li><a href="#">REAL-LIFE ENGLISH</a></li>
-            <li><a href="#">SOLUZIONI AZIENDALI</a></li>
+        <img class="img_logo" src="assets/img/logo.svg" alt="logo">
+          <ul class="padding">
+              <li><a href="#">il metodo</a>
+              </li>
+              <li><a href="#">la tecnologia</a>
+              </li>
+              <li><a href="#">real-life english</a>
+              </li>
+              <li><a href="#">soluzioni aziendali</a>
+              </li>
           </ul>
-          <!-- bottoni spostati a destra -->
-          <ul class="text_right">
-            <li><a href="#">DIVENTA UN TUTOR</a></li>
-            <li><a id="butt_bord" href="#">LOGIN</a></li>
-            <li>
-              <a class="butt_green" href="#">STRUTTURA UN PIANO</a>
-            </li>
+          <ul class="ul_right">
+              <li><a href="#">diventa un tutor</a>
+              </li>
+              <li><a class="butn_login radious" href="#">login</a>
+              </li>
+              <li><a class="bg_green radious" href="#">struttura un piano</a>
+              </li>
           </ul>
-       </div>
-       <section class="row">
-       <div class="bg_header col_100">
-       </div>
-     </section>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="row">
-      <div class="col_100 title">
-          <h1>
-            Scegli l'inglese studiato
-            <br>
-            per i professionisti
+      </nav>
+        <!-- jumbo con testo a sinistra e img a destra -->
+        <div class="jumbo">
+          <h1>scegli l'inglese studiato per i professionisti
           </h1>
-          <a class="butt_green" href="#">STRUTTURA UN PIANO</a>
+          <a href="#">
+          <div class="butn_jumbo bg_green radious">struttuta un piano
+          </div>
+          </a>
+        </div>
+    </div>
+  </header>
+    <main>
+      <!-- titolo centrale con sottotitolo e bg gray -->
+      <div class="description bg_gray">
+          <div class="txt center">
+              <h2>Le scuole di lingua tradizionali non sono efficaci
+              </h2>
+              <h3 class="txt_gray">Solo un corso incentrato sulla Fluency puo portare ad una soluzione definitiva concreta
+              </h3>
+          </div>
       </div>
-      <!-- TODO: main -->
-    </section>
-      <section class="row">
-        <div class="col_100">
-        </div>
-      </section>
-      <section class="row">
+      <!-- 3 col con img e sotto del testo -->
+      <div class="row container clear">
         <div class="col_33">
+          <img src="assets/img/profile.svg" alt="profile">
+            <h1>Piano formativo configurato sul proprio livello
+            </h1>
+          <div class="line">
+          </div>
+            <p class="txt_gray">Un metodo improntato sullo speaking con percorsi basati esattamente sulle esigenze personali dei partecipanti. Tutto parte da un accurato test di partenza per definire il livello e impostare gli obbiettivi da raggiungere.
+            </p>
         </div>
         <div class="col_33">
+          <img src="assets/img/computer.svg" alt="computer">
+            <h1>Affiancamento costante del tutor
+            </h1>
+          <div class="line">
+          </div>
+            <p class="txt_gray">Scopri il syllabus, la guida per il tuo percorso. Scegli gli argomenti per passare al livello successivo e affrontali con i tutor nelle sessioni one-to-one.
+            </p>
         </div>
         <div class="col_33">
+          <img src="assets/img/doc.svg" alt="documents">
+            <h1>Monitora i tuoi progressi costantemente
+            </h1>
+          <div class="line">
+          </div>
+            <p class="txt_gray">Controlla i tuoi dati elaborati dal nostro sistema. Hai il pieno controllo su miglioramenti e obbiettivi raggiunti.
+            </p>
         </div>
-      </section>
-      <section class="row">
-        <div class="col_50">
-        </div>
-        <div class="col_50">
-        </div>
-      </section>
+      </div>
+      <hr>
+      <!-- piano personalizzato img a sinistra e testo a destra -->
+      <div class="row container clear">
+          <div class="col_50">
+              <img src="assets/img/mountain.svg" alt="mountain_graphic">
+          </div>
+          <div class="col_50 col_50_right">
+              <h2>Scopri il tuo livello iniziale e struttura un piano personalizzato
+              </h2>
+              <h3 class="txt_gray">L'esperienza Fluentify parte sempre da un test di placement per avere una chiara visione del tuo inglese, ad oggi.
+              </h3>
+              <a href="#">Scopri il nostro test di placement
+              </a>
+          </div>
+      </div>
     </main>
-    <!-- TODO: footer -->
+    <!-- TODO: footer + help butn -->
     <footer class="container">
       <section class="row">
         <div class="col_50">
